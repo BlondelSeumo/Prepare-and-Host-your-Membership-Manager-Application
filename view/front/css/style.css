@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url('../fonts/raleway-v14-latin-300.woff2') format('woff2'), url('../fonts/raleway-v14-latin-300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), url('../fonts/raleway-v14-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/raleway-v14-latin-500.woff2') format('woff2'), url('../fonts/raleway-v14-latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('../fonts/raleway-v14-latin-700.woff2') format('woff2'), url('../fonts/raleway-v14-latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url('../fonts/raleway-v14-latin-800.woff2') format('woff2'), url('../fonts/raleway-v14-latin-800.woff') format('woff');
+}
+html,
+body {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: var(--body-color);
+  background-color: var(--body-bg-color);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+a,
+a.dark,
+a.white,
+a.grey {
+  cursor: pointer;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all .35s ease;
+  outline: none;
+}
+a:hover,
+a.hover,
+a:focus {
+  color: var(--primary-color-hover);
+  transition: all .55s ease;
+  outline: none;
+  text-decoration: none
+}
+a.white {
+  color: rgba(255,255,255,0.8);
+}
+a.white:hover,
+a.white.hover,
+a.white:focus {
+  color: rgba(255,255,255,1);
+}
+a.dark {
+  color: var(--dark-color);
+}
+a.dark:hover,
+a.dark.hover,
+a.dark:focus {
+  color: var(--primary-color);
+}
+a.grey {
+  color: var(--grey-color);
+}
+a.grey:hover,
+a.grey.hover,
+a.grey:focus {
+  color: var(--primary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 .5rem 0;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0 0 1rem 0;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+h1.basic,
+h2.basic,
+h3.basic,
+h4.basic,
+h5.basic,
+h6.basic,
+p.basic {
+  margin: 0;
+}
+header {
+  min-height: 500px;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('../images/header.jpg');
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wojo.white.fill {
+  fill: #edf2f7;
+}
+header .shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 0;
+}
+#nav {
+  position: absolute;
+  right: 1rem;
+  top: 1rem
+}
+#logo {
+  max-width: 120px;
+  margin: 0 auto;
+}
+#logo a {
+  display: inline-block;
+  ;
+}
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  margin-top: -8rem;
+  position: relative;
+  border: 3px solid #fff;
+  z-index: 4
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-weight: 400;
+  font-size: .875rem;
+}
+.wojo.raised.segment {
+  z-index: 3;
+  margin-top: -8rem;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+  border-radius: .5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.wojo.raised.auto.segment {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wojo.cards .card.active {
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+}
+
+@media screen and (min-width:40.625em) and (max-width:64em) and (orientation : landscape) {
+header {
+  min-height: 400px;
+}
+.wojo.raised.segment,
+.avatar {
+  margin-top: -7rem;
+}
+}
+
+@media screen and (max-width:30em) {
+header {
+  min-height: 300px;
+}
+.wojo.raised.segment,
+.avatar {
+  margin-top: -6rem;
+}
+}
+/* == Dark Theme == */
+[data-theme="dark"] {
+ --body-color: #e9ebec;
+ --body-bg-color: #1e2a31;
+ --primary-color: #1e88e5;
+ --primary-color-hover: #0078c1;
+ --dark-color-inverted: #1e2a31;
+}
+[data-theme="dark"] .wojo.white.fill {
+  fill: var(--body-bg-color);
+}
+[data-theme="dark"] .wojo.card,
+[data-theme="dark"] .wojo.segment,
+[data-theme="dark"] .wojo.cards .card,
+[data-theme="dark"] .wojo.tabs .tab {
+  background-color: #2b3942;
+  border: 0;
+  box-shadow: none;
+}
+[data-theme="dark"] .wojo.loading.segment::before,
+[data-theme="dark"] .wojo.loading.form::before,
+[data-theme="dark"] .wojo.loading.card::before {
+  background: rgba(0, 0, 0, 0.8);
+}
+[data-theme="dark"] .wojo.loading.segment::after,
+[data-theme="dark"] .wojo.loading.form::after,
+[data-theme="dark"] .wojo.loading.card::after {
+  border-color: rgba(255,255,255,.5) rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1) rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
+}
+[data-theme="dark"] .wojo.auto.divider {
+  border-color: #1e2a31;
+}
+[data-theme="dark"] .wojo.wide.divider {
+  border-top: 3px solid #1e2a31;
+}
+[data-theme="dark"] .wojo.very.wide.divider {
+  border-top: 5px solid #1e2a31;
+}
+[data-theme="dark"] .wojo.light.buttons .button,
+[data-theme="dark"] .wojo.light.button,
+[data-theme="dark"] .wojo.white.buttons .button,
+[data-theme="dark"] .wojo.white.button {
+  background-color: #1e2a31;
+  color: var(--light-color);
+  border-color: #1e2a31;
+}
+[data-theme="dark"] .wojo.basic.table tr td {
+  border-top: 1px solid var(--light-color-shadow);
+}
+[data-theme="dark"] .wojo.table tr td {
+  border-top: 3px solid var(--light-color-shadow);
+}
+[data-theme="dark"] .wojo.table thead th {
+  border-bottom: 1px solid var(--light-color-shadow);
+  background: var(--body-bg-color);
+}
+[data-theme="dark"] .wojo.form textarea,
+[data-theme="dark"] .wojo.file > input,
+[data-theme="dark"] .wojo.form input:not([type]),
+[data-theme="dark"] .wojo.form input[type="date"],
+[data-theme="dark"] .wojo.form input[type="datetime-local"],
+[data-theme="dark"] .wojo.form input[type="email"],
+[data-theme="dark"] .wojo.form input[type="number"],
+[data-theme="dark"] .wojo.form input[type="password"],
+[data-theme="dark"] .wojo.form input[type="search"],
+[data-theme="dark"] .wojo.form input[type="tel"],
+[data-theme="dark"] .wojo.form input[type="time"],
+[data-theme="dark"] .wojo.form input[type="text"],
+[data-theme="dark"] .wojo.form input[type="url"] {
+  background: #2b3942;
+  border: 1px solid #515d64;
+  box-shadow: none;
+}
+[data-theme="dark"] .wojo.form input.basic {
+  box-shadow: 0 1px 0 0 #515d64;
+}
+[data-theme="dark"] .wojo.form textarea:focus,
+[data-theme="dark"] .wojo.form input:not([type]):focus,
+[data-theme="dark"] .wojo.form input[type="date"]:focus,
+[data-theme="dark"] .wojo.form input[type="datetime-local"]:focus,
+[data-theme="dark"] .wojo.form input[type="email"]:focus,
+[data-theme="dark"] .wojo.form input[type="number"]:focus,
+[data-theme="dark"] .wojo.form input[type="password"]:focus,
+[data-theme="dark"] .wojo.form input[type="search"]:focus,
+[data-theme="dark"] .wojo.form input[type="tel"]:focus,
+[data-theme="dark"] .wojo.form input[type="time"]:focus,
+[data-theme="dark"] .wojo.form input[type="text"]:focus,
+[data-theme="dark"] .wojo.form input[type="url"]:focus,
+[data-theme="dark"] .wojo.form input[type="text"]:focus,
+[data-theme="dark"] .wojo.form select:focus {
+  color: var(--light-color);
+  border-color: var(--primary-color);
+  border-radius: 0.250rem;
+  background: #2b3942;
+  box-shadow: 0 0 0 1px #6c8ea4;
+}
+[data-theme="dark"] .wojo.form select {
+  background: #2b3942 url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23515d64' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 1rem center;
+  background-size: auto auto;
+  background-size: 8px 10px;
+  color: var(--light-color);
+  border: 1px solid #515d64;
+}
+[data-theme="dark"] .wojo.input {
+  background: #2b3942;
+  border: 1px solid #515d64;
+  box-shadow: none;
+}
+[data-theme="dark"] .wojo.form .wojo.input input {
+  border: 0;
+}
+[data-theme="dark"] .wojo.basic.input {
+  background: rgba(255, 255, 255, 0);
+  border-bottom-color: #515d64;
+  border-radius: 0;
+}
+[data-theme="dark"] .wojo.basic.input input {
+  box-shadow: none;
+}
+[data-theme="dark"] .wojo.input.focus {
+  color: var(--light-color);
+  border-color: #6c8ea4;
+}
+[data-theme="dark"] .wojo.basic.input.focus {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #6c8ea4;
+}
+[data-theme="dark"] .wojo.basic.input.focus input {
+  box-shadow: none;
+}
+[data-theme="dark"] .wojo.celled.list:not(.horizontal) > .item,
+[data-theme="dark"] .wojo.divided.list:not(.horizontal) > .item {
+  border-top-color: var(--light-color-shadow);
+}
+[data-theme="dark"] .wojo.celled.list:not(.horizontal) > .item:last-child {
+  border-bottom: 1px solid var(--light-color-shadow);
+}
+[data-theme="dark"] .wojo.divided.horizontal.list > .item::before,
+[data-theme="dark"] .wojo.celled.horizontal.list > .item::before,
+[data-theme="dark"] .wojo.horizontal.celled.list > .item:last-child::after {
+  border-left-color: var(--light-color-shadow);
+}
+[data-theme="dark"] .wojo.list > .item.active {
+  color: var(--light-color)
+}
+[data-theme="dark"] .wojo.divided.horizontal.list > .item.active,
+.wojo.celled.horizontal.list > .item.active {
+  color: var(--light-color);
+}
+[data-theme="dark"] .wojo.checkbox label::before {
+  background-color: #303e46;
+  border-color: #515d64
+}
+[data-theme="dark"] .wojo.toggle.checkbox label::after {
+  background-color: #303e46;
+  border-color: #515d64
+}
+[data-theme="dark"] .wavatar-dropzone {
+  background-color: #303e46;
+  border-color: #515d64
+}

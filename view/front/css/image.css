@@ -1,0 +1,196 @@
+/* == Images == */
+.wojo.image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  background-color: transparent;
+}
+img.wojo.image {
+  display: block;
+}
+.wojo.image svg,
+.wojo.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wojo.inline.image,
+.wojo.inline.image svg,
+.wojo.inline.image img {
+  display: inline-block;
+}
+/* == Variations == */
+.wojo.rounded.images .image,
+.wojo.rounded.images img,
+.wojo.rounded.image img,
+.wojo.rounded.image svg,
+.wojo.rounded.image {
+  border-radius: 0.250rem;
+}
+.wojo.rounded.left.images .image,
+.wojo.rounded.left.images img,
+.wojo.rounded.left.image img,
+.wojo.rounded.left.image svg,
+.wojo.rounded.left.image {
+  border-radius: 0.250rem 0 0 0.250rem;
+}
+.wojo.rounded.right.images .image,
+.wojo.rounded.right.images img,
+.wojo.rounded.right.image img,
+.wojo.rounded.right.image svg,
+.wojo.rounded.right.image {
+  border-radius: 0 0.250rem 0.250rem 0;
+}
+.wojo.circular.images .image,
+.wojo.circular.images img,
+.wojo.circular.image img,
+.wojo.circular.image svg,
+.wojo.circular.image {
+  border-radius: 500rem;
+  overflow: hidden;
+}
+.wojo.shadow.images .image,
+.wojo.shadow.images img,
+.wojo.shadow.image img,
+.wojo.shadow.image svg,
+.wojo.shadow.image {
+  box-shadow: 0px 2px 3px var(--dark-color-shadow);
+}
+.wojo.boxed.images .image,
+.wojo.boxed.images img,
+.wojo.boxed.image img,
+.wojo.boxed.image svg,
+.wojo.boxed.image {
+  border: 1px solid var(--light-color);
+}
+.wojo.framed.images .image,
+.wojo.framed.images img,
+.wojo.framed.image img,
+.wojo.framed.image svg,
+.wojo.framed.image {
+  border: 1px solid var(--light-color);
+  padding: 1rem;
+}
+.wojo.image.full img,
+.wojo.image.fit {
+  -o-object-fit: cover;
+  object-fit: cover;
+  flex-grow: 1;
+}
+.wojo.image.full {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wojo.avatar.images .image,
+.wojo.avatar.images img,
+.wojo.avatar.images svg,
+.wojo.avatar.image img,
+.wojo.avatar.image svg,
+.wojo.avatar.image {
+  width: 3em;
+  height: 3em;
+  border-radius: 500rem;
+}
+.wojo.category.images .image,
+.wojo.category.images img,
+.wojo.category.image img,
+.wojo.category.image {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  line-height: 2rem;
+  box-sizing: content-box;
+  font-size: .875rem;
+  border-radius: 500rem;
+  box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.1);
+  border: 1px solid #fff;
+}
+/* == Position == */
+.wojo.center.image {
+  margin: 0 auto;
+  display: block;
+}
+/* == Size == */
+.wojo.tiny.images .image,
+.wojo.tiny.images img,
+.wojo.tiny.images svg,
+.wojo.tiny.image {
+  width: 24px;
+}
+.wojo.mini.images .image,
+.wojo.mini.images img,
+.wojo.mini.images svg,
+.wojo.mini.image {
+  width: 32px;
+}
+.wojo.default.images .image,
+.wojo.default.images img,
+.wojo.default.images svg,
+.wojo.default.image {
+  width: 48px;
+}
+.wojo.small.images .image,
+.wojo.small.images img,
+.wojo.small.images svg,
+.wojo.small.image {
+  width: 64px;
+}
+.wojo.notification.images img,
+.wojo.notification.images svg,
+.wojo.notification.image {
+  width: 96px;
+}
+.wojo.badge.images .image,
+.wojo.badge.images img,
+.wojo.badge.images svg,
+.wojo.badge.image {
+  width: 112px;
+}
+.wojo.normal.images .image,
+.wojo.normal.images img,
+.wojo.normal.images svg,
+.wojo.normal.image {
+  width: 128px;
+}
+.wojo.medium.images .image,
+.wojo.medium.images img,
+.wojo.medium.images svg,
+.wojo.medium.image {
+  width: 160px;
+}
+.wojo.large.images .image,
+.wojo.large.images img,
+.wojo.large.images svg,
+.wojo.large.image {
+  width: 256px;
+}
+.wojo.big.images .image,
+.wojo.big.images img,
+.wojo.big.images svg,
+.wojo.big.image {
+  width: 448px;
+}
+.wojo.huge.images .image,
+.wojo.huge.images img,
+.wojo.huge.images svg,
+.wojo.huge.image {
+  width: 512px;
+}
+.wojo.massive.images .image,
+.wojo.massive.images img,
+.wojo.massive.images svg,
+.wojo.massive.image {
+  width: 640px;
+}
+.wojo.fluid.image,
+.wojo.fluid.image img,
+.wojo.fluid.image svg,
+.wojo.fluid.images,
+.wojofluid.images img,
+.wojo.fluid.images svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

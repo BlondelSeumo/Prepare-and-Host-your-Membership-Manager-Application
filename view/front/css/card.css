@@ -1,0 +1,325 @@
+/* == Card == */
+.wojo.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 1rem 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border-radius: .250rem;
+  border: 1px solid var(--grey-color-300);
+  box-shadow: 0 0 2rem 0 var(--shadow-color);
+}
+.wojo.card > .content:not(.notes),
+.wojo.segment > .content:not(.notes) {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+.wojo.card > .header,
+.wojo.card > .footer,
+.wojo.segment > .header,
+.wojo.segment > .footer {
+  padding: 1.25rem 1.5rem;
+}
+.wojo.card > .header.divided,
+.wojo.segment > .header.divided {
+  border-bottom: 1px solid var(--shadow-color);
+}
+.wojo.card > .footer.divided,
+.wojo.segment > .footer.divided {
+  border-top: 1px solid var(--shadow-color);
+}
+.wojo.card > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wojo.segment {
+  position: relative;
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: .250rem;
+  border: 1px solid var(--grey-color-300);
+  box-shadow: 0 10px 15px -3px var(--shadow-color),0 4px 6px -2px var(--shadow-color);
+}
+.wojo.segment > .header {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+.wojo.segment > .basic.header {
+  display: inherit;
+  flex-flow: inherit;
+  position: relative;
+}
+.wojo.segment > .header > .items {
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.wojo.segment > .header > .items:last-child {
+  margin-right: 0;
+}
+.wojo.segment.gutters,
+.wojo.segment.gutters > .content:not(.notes) {
+  padding: 2rem 2rem 0 2rem;
+}
+.wojo.basic.segment,
+.wojo.basic.card,
+.wojo.basic.cards > .card {
+  border: 0;
+}
+.wojo.fitted.segment,
+.wojo.fitted.card,
+.wojo.fitted.cards > .card {
+  padding: 0;
+}
+.wojo.simple.segment,
+.wojo.simple.card,
+.wojo.simple.cards > .card {
+  box-shadow: none;
+}
+.wojo.attached.segment,
+.wojo.attached.card {
+  margin: 0;
+}
+.wojo.top.attached.segment,
+.wojo.top.attached.card {
+  margin-top: 0;
+}
+.wojo.bottom.attached.segment,
+.wojo.bottom.attached.card {
+  margin-bottom: 0;
+}
+.wojo.spaced.segment,
+.wojo.spaced.card {
+  margin: 2rem 0;
+}
+/* == Grid == */
+.wojo.cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: var(--gutter-compensation);
+  flex-wrap: wrap;
+}
+.wojo.cards .card {
+  position: relative;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid var(--grey-color-300);
+  border-radius: .250rem;
+  margin-left: var(--gutter);
+  margin-bottom: var(--gutter);
+  box-shadow: 0 0 2rem 0 var(--shadow-color);
+}
+.wojo.cards .card > .content {
+  padding: 2em;
+  flex: 1 1 auto;
+}
+.wojo.cards .card > .header,
+.wojo.cards .card > .footer {
+  padding: 1.25rem 1.5rem;
+}
+.wojo.cards .card > .header.divided {
+  border-bottom: 1px solid var(--shadow-color);
+}
+.wojo.cards .card > .footer.divided {
+  border-top: 1px solid var(--shadow-color);
+}
+.wojo.full.cards .card {
+  flex-direction: column;
+  display: flex;
+}
+.wojo.full.cards .card > .footer {
+  margin-top: auto;
+}
+.wojo.fof.card {
+  min-height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.wojo.fof.card h1 {
+  font-size: 8rem;
+  letter-spacing: .875rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+.wojo.fof.card p:first-of-type {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--grey-color);
+}
+/* == Loading == */
+.wojo.loading.segment,
+.wojo.loading.card {
+  position: relative;
+  cursor: default;
+  pointer-events: none;
+}
+.wojo.loading.segment::before,
+.wojo.loading.card::before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.wojo.loading.segment::after,
+.wojo.loading.card::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -1.5em 0em 0em -1.5em;
+  width: 3em;
+  height: 3em;
+  -webkit-animation: form-spin 0.6s linear;
+  animation: form-spin 0.6s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: rgba(0,0,0,.5) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 0.2em;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0);
+  visibility: visible;
+  z-index: 101;
+}
+@-webkit-keyframes segment-spin {
+ from {
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ to {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+@keyframes segment-spin {
+ from {
+ -webkit-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ to {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+
+/* Screen */
+@media screen and (min-width: 64.063em) {
+.wojo.cards.screen-1,
+.wojo.cards.screen-2,
+.wojo.cards.screen-3,
+.wojo.cards.screen-4,
+.wojo.cards.screen-5 {
+  flex-wrap: wrap;
+}
+.wojo.cards.screen-1 > .card {
+  flex: 0 0 calc(100% - var(--gutter));
+  max-width: calc(100% - var(--gutter));
+}
+.wojo.cards.screen-2 > .card {
+  flex: 0 0 calc(50% - var(--gutter));
+  max-width: calc(50% - var(--gutter));
+}
+.wojo.cards.screen-3 > .card {
+  flex: 0 0 calc(100% / 3 - var(--gutter));
+  max-width: calc(100% / 3 - var(--gutter));
+}
+.wojo.cards.screen-4 > .card {
+  flex: 0 0 calc(25% - var(--gutter));
+  max-width: calc(25% - var(--gutter));
+}
+.wojo.cards.screen-5 > .card {
+  flex: 0 0 calc(20% - var(--gutter));
+  max-width: calc(20% - var(--gutter));
+}
+}
+
+/* Tablet */
+@media screen and (min-width:40.625em) and (max-width:64em) {
+.wojo.cards.tablet-1,
+.wojo.cards.tablet-2,
+.wojo.cards.tablet-3,
+.wojo.cards.tablet-4,
+.wojo.cards.tablet-5 {
+  flex-wrap: wrap;
+}
+.wojo.cards.tablet-1 > .card {
+  flex: 0 0 calc(100% - var(--gutter));
+  max-width: calc(100% - var(--gutter));
+}
+.wojo.cards.tablet-2 > .card {
+  flex: 0 0 calc(50% - var(--gutter));
+  max-width: calc(50% - var(--gutter));
+}
+.wojo.cards.tablet-3 > .card {
+  flex: 0 0 calc(100% / 3 - var(--gutter));
+  max-width: calc(100% / 3 - var(--gutter));
+}
+.wojo.cards.tablet-4 > .card {
+  flex: 0 0 calc(25% - var(--gutter));
+  max-width: calc(25% - var(--gutter));
+}
+.wojo.cards.tablet-5 > .card {
+  flex: 0 0 calc(20% - var(--gutter));
+  max-width: calc(20% - var(--gutter));
+}
+}
+
+/* Mobile */
+@media screen and (max-width:48.063em) {
+.wojo.cards.mobile-1,
+.wojo.cards.mobile-2,
+.wojo.cards.mobile-3,
+.wojo.cards.mobile-4,
+.wojo.cards.mobile-5 {
+  flex-wrap: wrap;
+}
+.wojo.cards.mobile-1 > .card {
+  flex: 0 0 calc(100% - var(--gutter));
+  max-width: calc(100% - var(--gutter));
+}
+.wojo.cards.mobile-2 > .card {
+  flex: 0 0 calc(50% - var(--gutter));
+  max-width: calc(50% - var(--gutter));
+}
+.wojo.cards.mobile-3 > .card {
+  flex: 0 0 calc(100% / 3 - var(--gutter));
+  max-width: calc(100% / 3 - var(--gutter));
+}
+.wojo.cards.mobile-4 > .card {
+  flex: 0 0 calc(25% - var(--gutter));
+  max-width: calc(25% - var(--gutter));
+}
+.wojo.cards.mobile-5 > .card {
+  flex: 0 0 calc(20% - var(--gutter));
+  max-width: calc(20% - var(--gutter));
+}
+}
+
+/* Phone */
+@media screen and (max-width:30em) {
+.wojo.cards[class*="screen-"],
+.wojo.cards[class*="tablet-"],
+.wojo.cards[class*="mobile-"] {
+  flex-wrap: wrap;
+}
+.wojo.cards[class*="screen-"] > .card,
+.wojo.cards[class*="tablet-"] > .card,
+.wojo.cards[class*="mobile-"] > .card {
+  flex: 0 0 calc(100% - var(--gutter));
+  max-width: calc(100% - var(--gutter));
+}
+}

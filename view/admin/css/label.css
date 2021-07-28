@@ -1,0 +1,260 @@
+/* == Label == */
+.wojo.label {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  vertical-align: middle;
+  background-color: #757575;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  margin: 0;
+  padding: .5rem 1rem;
+  line-height: 1rem;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: .250rem;
+  box-sizing: content-box;
+  border: 1px solid #757575;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.1);
+}
+.wojo.basic.label,
+.wojo.inverted.label {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #757575;
+  color: #757575;
+}
+/* == Colors == */
+.wojo.primary.label {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+.wojo.primary.basic.label {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.wojo.primary.inverted.label {
+  background-color: var(--primary-color-inverted);
+  border-color: var(--primary-color-inverted);
+  color: var(--primary-color);
+}
+.wojo.secondary.label {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+.wojo.secondary.basic.label {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.wojo.secondary.inverted.label {
+  background-color: var(--secondary-color-inverted);
+  border-color: var(--secondary-color-inverted);
+  color: var(--secondary-color);
+}
+.wojo.positive.label {
+  border-color: var(--positive-color);
+  background-color: var(--positive-color);
+  color: #fff;
+}
+.wojo.positive.basic.label {
+  background-color: transparent;
+  color: var(--positive-color);
+}
+.wojo.positive.inverted.label {
+  background-color: var(--positive-color-inverted);
+  border-color: var(--positive-color-inverted);
+  color: var(--positive-color);
+}
+.wojo.negative.label {
+  background-color: var(--negative-color);
+  border-color: var(--negative-color);
+  color: #fff;
+}
+.wojo.negative.basic.label {
+  background-color: transparent;
+  color: var(--negative-color);
+}
+.wojo.negative.inverted.label {
+  background-color: var(--negative-color-inverted);
+  border-color: var(--negative-color-inverted);
+  color: var(--negative-color);
+}
+.wojo.light.label {
+  background-color: var(--light-color);
+  border-color: var(--light-color);
+  color: var(--body-color);
+}
+.wojo.light.basic.label {
+  background-color: transparent;
+  color: var(--light-color);
+}
+.wojo.light.inverted.label {
+  background-color: var(--light-color-inverted);
+  border-color: var(--light-color-inverted);
+  color: var(--light-color);
+}
+.wojo.dark.label {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #fff;
+}
+.wojo.dark.basic.label {
+  background-color: transparent;
+  color: #fff;
+}
+.wojo.dark.inverted.label {
+  background-color: var(--dark-color-inverted);
+  border-color: var(--dark-color-inverted);
+  color: var(--dark-color);
+}
+.wojo.alert.label {
+  background-color: var(--alert-color);
+  border-color: var(--alert-color);
+  color: #fff;
+}
+.wojo.alert.basic.label {
+  background-color: transparent;
+  color: var(--alert-color);
+}
+.wojo.white.label {
+  background-color: #fff;
+  border-color: #fff;
+  color: var(--primary-color);
+}
+.wojo.white.basic.label {
+  background-color: transparent;
+  color: #fff;
+}
+.wojo.transparent.label {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border: 1px solid transparent;
+}
+/* == icon == */
+.wojo.label .icon {
+  margin-right: 0.5rem;
+}
+.wojo.right.label .icon {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+/* == rounded == */
+.wojo.rounded.label {
+  border-radius: 2rem;
+}
+/* == circular == */
+.wojo.circular.label {
+  border-radius: 100rem;
+}
+/* == initials == */
+.wojo.initials.label {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  line-height: 2rem;
+  font-size: .875rem;
+}
+.wojo.initials.label .icon {
+    margin-right:0;
+}
+/* == empty == */
+.wojo.empty.label {
+  min-width: 0em;
+  min-height: 0em;
+  overflow: hidden;
+  width: .875rem;
+  height: .875rem;
+  padding: 0;
+}
+/* == ring == */
+.wojo.ring.label {
+  border-radius: 100%;
+  height: .875rem;
+  padding: 0;
+  vertical-align: middle;
+  width: .875rem;
+  border:0;
+}
+.wojo.ring.label.spaced {
+  margin-right:.5rem
+}
+.wojo.ring.label::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 0.625rem;
+  left: 0.125rem;
+  position: absolute;
+  top: 0.125rem;
+  transition: all 0.3s ease 0s;
+  width: 0.625rem;
+}
+/* == link == */
+.wojo.link.label {
+  cursor: pointer;
+}
+.wojo.simple.label {
+  background-color: transparent;
+  border:0;
+  box-shadow:none;
+  color:inherit;
+}
+/* == status == */
+.wojo.label .status {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: .813rem;
+  height: .813rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+.wojo.label .status.negative {
+  background: var(--negative-color);
+}
+.wojo.label .status.positive {
+  background: var(--positive-color);
+}
+/* == Sizes == */
+.wojo.tiny.label {
+  font-size: 0.6875rem;
+  padding: .250rem .5rem;
+}
+.wojo.tiny.empty.label {
+  width: .5rem;
+  height: .5rem;
+  padding: 0;
+}
+.wojo.small.label {
+  font-size: 0.750rem;
+  padding: .25rem .5rem;
+}
+.wojo.small.empty.label {
+  width: .750rem;
+  height: .750rem;
+  padding: 0;
+}
+.wojo.label {
+  font-size: 0.813rem;
+}
+.wojo.big.label {
+  font-size: 0.913rem;
+}
+.wojo.big.initials.label {
+  width: calc(2.875rem - 2px);
+  height: calc(2.875rem - 2px);
+  line-height: calc(2.875rem - 2px);
+}
+.wojo.large.label {
+  font-size: 1rem;
+}

@@ -1,0 +1,129 @@
+/* == Input == */
+.wojo.input {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: .250rem;
+  border: 0px solid var(--grey-color-300);
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+  align-items: stretch;
+  transition: all 0.2s ease-in-out;
+}
+.wojo.input input,
+.wojo.form .wojo.input input,
+.wojo.form .wojo.input textarea {
+  flex: 1 1 0px;
+  min-width: 0;
+  border: 0;
+  border-radius: .250rem;
+  box-shadow: none;
+  height: calc(1.875rem + 1rem - 2px);
+}
+/* == Icon == */
+.wojo.icon.input > i.icon,
+.wojo.input .tag.label {
+  line-height: 1rem;
+  padding: 0 1rem;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.wojo.action.input > .button,
+.wojo.icon.input > .button {
+  padding: 0 1.875rem;
+  flex: 0 1 auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  height: calc(100%-4px);
+}
+.wojo.action.input > .icon.button,
+.wojo.icon.input > .icon.button {
+  padding: 0 1rem;
+  border: 0;
+}
+.wojo.action.input > .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--grey-color-100);
+}
+.wojo.action.input > .buttons .wojo.button {
+  padding: 0 1rem;
+}
+.wojo.input > select {
+  width:auto;
+  box-shadow: none;
+}
+.wojo.basic.input {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-bottom-color: var(--grey-color-500);
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0;
+}
+.wojo.basic.input input,
+.wojo.form .wojo.basic.input input,
+.wojo.form .wojo.basic.input textarea {
+  background: rgba(255, 255, 255, 0);
+  padding: 1rem 0;
+}
+/* == Tags == */
+.wojo.input .tag.label {
+  background-color: var(--primary-color);
+  padding: 0.5rem .75rem;
+  line-height: .750rem;
+  font-weight: 500;
+  color: var(--primary-color-inverted);
+  white-space: nowrap;
+  border-radius: .250rem;
+  margin-right: .250rem;
+}
+.wojo.input .tag [data-role="remove"] {
+  margin-left: .5rem;
+  cursor: pointer;
+}
+.wojo.input .tag [data-role="remove"]::after {
+  content: "x";
+  font-weight: 700;
+}
+/* == Focus == */
+.wojo.input.focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234,.5);
+}
+.wojo.basic.input.focus {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: var(--primary-color);
+}
+.wojo.basic.input.focus input:focus {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: none;
+}
+/* == Size == */
+.wojo.mini.basic.input input {
+  padding: .875rem 0;
+}
+.wojo.form .wojo.mini.input input,
+.wojo.mini.input input {
+  line-height: .750rem;
+  padding: .5rem 1rem;
+  font-size: .750rem;
+  height: calc(1rem + 1rem);
+}
+.wojo.small.basic.input input {
+  padding: .875rem 0;
+}
+.wojo.form .wojo.small.input input,
+.wojo.small.input input {
+  line-height: .875rem;
+  padding: .875rem 1.5rem;
+  font-size: .875rem;
+  height: calc(1.25rem + 1rem + 2px);
+}
+
+.wojo.form .wojo.input input,
+.wojo.input input {
+  line-height: 1rem;
+  padding: .875rem 1.5rem;
+  font-size: 1em;
+  height: calc(1.875rem + 1rem);
+}

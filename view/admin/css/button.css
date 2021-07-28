@@ -1,0 +1,847 @@
+/* == Button == */
+.wojo.button {
+  cursor: pointer;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  vertical-align: middle;
+  background-color: #757575;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  margin: 0;
+  padding: .875rem 1.875rem;
+  line-height: 1rem;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: .250rem;
+  border: 1px solid #757575;
+  box-sizing: content-box;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);
+}
+.wojo.button:hover,
+.wojo.button:active,
+.wojo.button:focus {
+  color: #fff;
+  background: #616161;
+  border-color: #616161;
+}
+.wojo.button:active,
+.wojo.button.active {
+  outline: 0 none;
+  box-shadow: none;
+}
+/* == basic == */
+.wojo.basic.buttons .button,
+.wojo.basic.button,
+.wojo.basic.primary.buttons .button,
+.wojo.basic.primary.button,
+.wojo.basic.secondary.buttons .button,
+.wojo.basic.secondary.button,
+.wojo.basic.positive.buttons .button,
+.wojo.basic.positive.button,
+.wojo.basic.negative.buttons .button,
+.wojo.basic.negative.button,
+.wojo.basic.white.buttons .button,
+.wojo.basic.white.button,
+.wojo.basic.light.buttons .button,
+.wojo.basic.light.button,
+.wojo.basic.dark.buttons .button,
+.wojo.basic.dark.button,
+.wojo.simple.buttons .button,
+.wojo.simple.button,
+.wojo.simple.primary.buttons .button,
+.wojo.simple.primary.button,
+.wojo.simple.secondary.buttons .button,
+.wojo.simple.secondary.button,
+.wojo.simple.positive.buttons .button,
+.wojo.simple.positive.button,
+.wojo.simple.negative.buttons .button,
+.wojo.simple.negative.button,
+.wojo.simple.white.buttons .button,
+.wojo.simple.white.button,
+.wojo.simple.light.buttons .button,
+.wojo.simple.light.button,
+.wojo.simple.dark.buttons .button,
+.wojo.simple.dark.button,
+.wojo.inverted.buttons .button,
+.wojo.inverted.button,
+.wojo.inverted.primary.buttons .button,
+.wojo.inverted.primary.button,
+.wojo.inverted.secondary.buttons .button,
+.wojo.inverted.secondary.button,
+.wojo.inverted.positive.buttons .button,
+.wojo.inverted.positive.button,
+.wojo.inverted.negative.buttons .button,
+.wojo.inverted.negative.button,
+.wojo.inverted.white.buttons .button,
+.wojo.inverted.white.button,
+.wojo.inverted.light.buttons .button,
+.wojo.inverted.light.button,
+.wojo.inverted.dark.buttons .button,
+.wojo.inverted.dark.button {
+  background: transparent;
+  box-shadow: none;
+  color: var(--body-color);
+}
+.wojo.simple.buttons .button,
+.wojo.simple.button,
+.wojo.simple.primary.buttons .button,
+.wojo.simple.primary.button,
+.wojo.simple.secondary.buttons .button,
+.wojo.simple.secondary.button,
+.wojo.simple.positive.buttons .button,
+.wojo.simple.positive.button,
+.wojo.simple.negative.buttons .button,
+.wojo.simple.negative.button,
+.wojo.simple.white.buttons .button,
+.wojo.simple.white.button,
+.wojo.simple.light.buttons .button,
+.wojo.simple.light.button,
+.wojo.simple.dark.buttons .button,
+.wojo.simple.dark.button {
+  box-shadow: none;
+  border-color: transparent;
+}
+.wojo.basic.button:hover,
+.wojo.basic.button.active,
+.wojo.basic.button:active {
+  color: #fff;
+  background: #616161;
+  border-color: #616161;
+}
+/* == primary == */
+.wojo.primary.buttons .button,
+.wojo.primary.button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+.wojo.primary.buttons .button:hover,
+.wojo.primary.buttons .button:active,
+.wojo.primary.buttons .button:focus,
+.wojo.primary.button:hover,
+.wojo.primary.button:active,
+.wojo.primary.button:focus {
+  color: #fff;
+  background: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+.wojo.primary.buttons .button:active,
+.wojo.primary.buttons .button.active,
+.wojo.primary.button:active,
+.wojo.primary.button.active {
+  box-shadow: none;
+}
+.wojo.simple.primary.buttons .button,
+.wojo.simple.primary.button {
+  color: var(--primary-color);
+  border-color: transparent;
+}
+.wojo.simple.primary.button:hover,
+.wojo.simple.primary.button.active,
+.wojo.simple.primary.button:active {
+  color: var(--primary-color-hover);
+  background: transparent;
+}
+.wojo.basic.primary.buttons .button,
+.wojo.basic.primary.button {
+  color: var(--primary-color);
+}
+.wojo.basic.primary.button:hover,
+.wojo.basic.primary.button.active,
+.wojo.basic.primary.button:active {
+  color: #fff;
+}
+.wojo.inverted.primary.buttons .button,
+.wojo.inverted.primary.button {
+  background-color: var(--primary-color-inverted);
+  color: var(--primary-color);
+  border-color: var(--primary-color-inverted);
+}
+.wojo.inverted.primary.buttons .button.active,
+.wojo.inverted.primary.buttons .button:hover,
+.wojo.inverted.primary.button:hover,
+.wojo.inverted.primary.button.active,
+.wojo.inverted.primary.button:active {
+  color: #fff;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+/* == secondary == */
+.wojo.secondary.buttons .button,
+.wojo.secondary.button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color);
+}
+.wojo.secondary.buttons .button:hover,
+.wojo.secondary.buttons .button:active,
+.wojo.secondary.buttons .button:focus,
+.wojo.secondary.button:hover,
+.wojo.secondary.button:active,
+.wojo.secondary.button:focus {
+  color: #fff;
+  background: var(--secondary-color-hover);
+  border-color: var(--secondary-color-hover);
+}
+.wojo.secondary.buttons .button:active,
+.wojo.secondary.buttons .button.active,
+.wojo.secondary.button:active,
+.wojo.secondary.button.active {
+  box-shadow: none;
+}
+.wojo.simple.secondary.buttons .button,
+.wojo.simple.secondary.button {
+  color: var(--secondary-color);
+  border-color: transparent;
+}
+.wojo.simple.secondary.button:hover,
+.wojo.simple.secondary.button.active,
+.wojo.simple.secondary.button:active {
+  color: var(--secondary-color-hover);
+  background: transparent;
+}
+.wojo.basic.secondary.buttons .button,
+.wojo.basic.secondary.button {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+.wojo.basic.secondary.button:hover,
+.wojo.basic.secondary.button.active,
+.wojo.basic.secondary.button:active {
+  color: #fff;
+}
+.wojo.inverted.secondary.buttons .button,
+.wojo.inverted.secondary.button {
+  background-color: var(--secondary-color-inverted);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color-inverted);
+}
+.wojo.inverted.secondary.buttons .button.active,
+.wojo.inverted.secondary.buttons .button:hover,
+.wojo.inverted.secondary.button:hover,
+.wojo.inverted.secondary.button.active,
+.wojo.inverted.secondary.button:active {
+  color: #fff;
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+/* == positive == */
+.wojo.positive.buttons .button,
+.wojo.positive.button {
+  background-color: var(--positive-color);
+  color: #fff;
+  border-color: var(--positive-color);
+}
+.wojo.positive.buttons .button:hover,
+.wojo.positive.buttons .button:active,
+.wojo.positive.buttons .button:focus,
+.wojo.positive.button:hover,
+.wojo.positive.button:active,
+.wojo.positive.button:focus {
+  color: #fff;
+  background: var(--positive-color-hover);
+  border-color: var(--positive-color-hover);
+}
+.wojo.positive.buttons .button:active,
+.wojo.positive.buttons .button.active,
+.wojo.positive.button:active,
+.wojo.positive.button.active {
+  box-shadow: none;
+}
+.wojo.simple.positive.buttons .button,
+.wojo.simple.positive.button {
+  color: var(--positive-color-hover);
+  border-color: transparent;
+}
+.wojo.simple.positive.button:hover,
+.wojo.simple.positive.button.active,
+.wojo.simple.positive.button:active {
+  color: var(--positive-color-hover);
+  background: transparent;
+}
+.wojo.basic.positive.buttons .button,
+.wojo.basic.positive.button {
+  border-color: var(--positive-color-hover);
+  color: var(--positive-color-hover);
+}
+.wojo.basic.positive.button:hover,
+.wojo.basic.positive.button.active,
+.wojo.basic.positive.button:active {
+  color: #fff;
+}
+.wojo.inverted.positive.buttons .button,
+.wojo.inverted.positive.button {
+  background-color: var(--positive-color-inverted);
+  color: var(--positive-color);
+  border-color: var(--positive-color-inverted);
+}
+.wojo.inverted.positive.buttons .button.active,
+.wojo.inverted.positive.buttons .button:hover,
+.wojo.inverted.positive.button:hover,
+.wojo.inverted.positive.button.active,
+.wojo.inverted.positive.button:active {
+  color: #fff;
+  background: var(--positive-color);
+  border-color: var(--positive-color);
+}
+/* == negative == */
+.wojo.negative.buttons .button,
+.wojo.negative.button {
+  background-color: var(--negative-color);
+  color: #fff;
+  border-color: var(--negative-color);
+}
+.wojo.negative.buttons .button:hover,
+.wojo.negative.buttons .button:active,
+.wojo.negative.buttons .button:focus,
+.wojo.negative.button:hover,
+.wojo.negative.button:active,
+.wojo.negative.button:focus {
+  color: #fff;
+  background: var(--negative-color-hover);
+  border-color: var(--negative-color-hover);
+}
+.wojo.negative.buttons .button:active,
+.wojo.negative.buttons .button.active,
+.wojo.negative.button:active,
+.wojo.negative.button.active {
+  box-shadow: none;
+}
+.wojo.simple.negative.buttons .button,
+.wojo.simple.negative.button {
+  color: var(--negative-color-hover);
+  border-color: transparent;
+}
+.wojo.simple.negative.button:hover,
+.wojo.simple.negative.button.active,
+.wojo.simple.negative.button:active {
+  color: var(--negative-color-hover);
+  background: transparent;
+}
+.wojo.basic.negative.buttons .button,
+.wojo.basic.negative.button {
+  border-color: var(--negative-color-hover);
+  color: var(--negative-color-hover);
+}
+.wojo.basic.negative.button:hover,
+.wojo.basic.negative.button.active,
+.wojo.basic.negative.button:active {
+  color: #fff;
+}
+.wojo.inverted.negative.buttons .button,
+.wojo.inverted.negative.button {
+  background-color: var(--negative-color-inverted);
+  color: var(--negative-color);
+  border-color: var(--negative-color-inverted);
+}
+.wojo.inverted.negative.buttons .button.active,
+.wojo.inverted.negative.buttons .button:hover,
+.wojo.inverted.negative.button:hover,
+.wojo.inverted.negative.button.active,
+.wojo.inverted.negative.button:active {
+  color: #fff;
+  background: var(--negative-color);
+  border-color: var(--negative-color);
+}
+/* == light == */
+.wojo.light.buttons .button,
+.wojo.light.button {
+  background-color: var(--light-color);
+  color: var(--body-color);
+  border-color: var(--light-color);
+}
+.wojo.light.buttons .button:hover,
+.wojo.light.buttons .button:active,
+.wojo.light.buttons .button:focus,
+.wojo.light.buttons .button.active,
+.wojo.light.button:hover,
+.wojo.light.button:active,
+.wojo.light.button:focus {
+  color: var(--body-color);
+  background: var(--light-color-hover);
+  border-color: var(--light-color-hover);
+}
+.wojo.light.buttons .button:active,
+.wojo.light.buttons .button.active,
+.wojo.light.button:active,
+.wojo.light.button.active {
+  box-shadow: none;
+}
+.wojo.simple.light.buttons .button,
+.wojo.simple.light.button {
+  color: var(--light-color);
+  border-color: transparent;
+}
+.wojo.simple.light.button:hover,
+.wojo.simple.light.button.active,
+.wojo.simple.light.button:active {
+  color: var(--light-color-hover);
+  background: transparent;
+}
+.wojo.basic.light.buttons .button,
+.wojo.basic.light.button {
+  border-color: var(--light-color);
+  color: var(--body-color);
+}
+.wojo.basic.light.button:hover,
+.wojo.basic.light.button.active,
+.wojo.basic.light.button:active {
+  color: var(--body-color);
+}
+.wojo.inverted.light.buttons .button,
+.wojo.inverted.light.button {
+  background-color: var(--light-color-inverted);
+  color: var(--light-color);
+  border-color: var(--light-color-inverted);
+}
+.wojo.inverted.light.buttons .button.active,
+.wojo.inverted.light.buttons .button:hover,
+.wojo.inverted.light.button:hover,
+.wojo.inverted.light.button.active,
+.wojo.inverted.light.button:active {
+  color: #fff;
+  background: var(--light-color);
+  border-color: var(--light-color);
+}
+/* == dark == */
+.wojo.dark.buttons .button,
+.wojo.dark.button {
+  background-color: var(--dark-color);
+  color: #fff;
+  border-color: var(--dark-color);
+}
+.wojo.dark.buttons .button:hover,
+.wojo.dark.buttons .button:active,
+.wojo.dark.buttons .button:focus,
+.wojo.dark.button:hover,
+.wojo.dark.button:active,
+.wojo.dark.button:focus {
+  color: #fff;
+  background: var(--dark-color-hover);
+  border-color: var(--dark-color-hover);
+}
+.wojo.dark.buttons .button:active,
+.wojo.dark.buttons .button.active,
+.wojo.dark.button:active,
+.wojo.dark.button.active {
+  box-shadow: none;
+}
+.wojo.simple.dark.buttons .button,
+.wojo.simple.dark.button {
+  color: var(--dark-color);
+  border-color: transparent;
+}
+.wojo.simple.dark.button:hover,
+.wojo.simple.dark.button.active,
+.wojo.simple.dark.button:active {
+  color: var(--dark-color-hover);
+  background: transparent;
+}
+.wojo.basic.dark.buttons .button,
+.wojo.basic.dark.button {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+.wojo.basic.dark.button:hover,
+.wojo.basic.dark.button.active,
+.wojo.basic.dark.button:active {
+  color: #fff;
+}
+.wojo.inverted.dark.buttons .button,
+.wojo.inverted.dark.button {
+  background-color: var(--dark-color-inverted);
+  color: var(--dark-color);
+  border-color: var(--dark-color-inverted);
+}
+.wojo.inverted.dark.buttons .button.active,
+.wojo.inverted.dark.buttons .button:hover,
+.wojo.inverted.dark.button:hover,
+.wojo.inverted.dark.button.active,
+.wojo.inverted.dark.button:active {
+  color: #fff;
+  background: var(--dark-color);
+  border-color: var(--dark-color);
+}
+/* == white == */
+.wojo.white.buttons .button,
+.wojo.white.button {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(50,50,93,.11), 0 1px 1px rgba(0,0,0,.08);
+  color: var(--primary-color);
+  border-color: #fff;
+}
+.wojo.white.buttons .button:hover,
+.wojo.white.buttons .button:active,
+.wojo.white.buttons .button:focus,
+.wojo.white.button:hover,
+.wojo.white.button:active,
+.wojo.white.button:focus {
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.wojo.white.buttons .button:active,
+.wojo.white.buttons .button.active,
+.wojo.white.button:active,
+.wojo.white.button.active {
+  box-shadow: 0 0 0 0 transparent;
+}
+.wojo.basic.white.buttons .button,
+.wojo.basic.white.button {
+  border-color: #fff;
+  color: #fff;
+}
+.wojo.basic.white.button:hover,
+.wojo.basic.white.button.active,
+.wojo.basic.white.button:active {
+  color: var(--primary-color);
+}
+/* == transparent == */
+.wojo.transparent.buttons .button,
+.wojo.transparent.button {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border-color: transparent
+}
+.wojo.transparent.buttons .button:hover,
+.wojo.transparent.buttons .button:active,
+.wojo.transparent.buttons .button:focus,
+.wojo.transparent.button:active,
+.wojo.transparent.button:focus {
+  background: rgba(255,255,255,0.4);
+}
+/* == fluid == */
+.wojo.fluid.button,
+.wojo.fluid.buttons {
+  display: flex;
+  margin: 0
+}
+.wojo.fluid.buttons .button {
+  flex: 1 1 0px;
+  min-width: 0;
+}
+.wojo.fluid.labeled.button span {
+  flex: 1 1 0px;
+}
+button.wojo.fluid.button {
+  /*padding + border*/
+  width: calc(100% - 3.75rem - 2px);
+}
+/* == icon == */
+.wojo.icon.button {
+  margin: 0;
+  line-height: 1rem;
+  padding: .875rem;
+  font-size: 1rem;
+}
+.wojo.icon.button .icon {
+  width: 1rem;
+}
+.wojo.button:not(.icon) .icon {
+  margin-right: 1rem;
+}
+.wojo.right.button:not(.labeled):not(.icon) .icon {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+/* == labeled == */
+.wojo.labeled.button {
+  padding: 0;
+}
+.wojo.labeled.button span,
+.wojo.labeled.button .icon {
+  flex: 0 1 auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+}
+.wojo.labeled.button span {
+  padding: .875rem 1.875rem;
+}
+.wojo.labeled.button .icon {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: .875rem;
+  background-color: rgba(50,50,93,.1);
+  box-shadow: 1px 0 0 0 rgba(50,50,93,.2);
+}
+.wojo.right.labeled.button .icon {
+  box-shadow: -1px 0 0 0 rgba(50,50,93,.2);
+}
+/* == Groups == */
+.wojo.buttons {
+  display: inline-flex;
+  flex-direction: row;
+}
+.wojo.buttons .button {
+  flex: 1 0 auto;
+  margin: 0em;
+  border-radius: 0em;
+  box-shadow: none;
+}
+.wojo.buttons .button:first-child {
+  border-radius: .250rem 0 0 .250rem;
+}
+.wojo.buttons .button:last-child {
+  border-radius: 0 .250rem .250rem 0;
+}
+.wojo.rounded.buttons .button:first-child {
+  border-radius: 2rem 0 0 2rem;
+}
+.wojo.rounded.buttons .button:last-child {
+  border-radius: 0 2rem 2rem 0;
+}
+/* == status == */
+.wojo.button .status {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: .813rem;
+  height: .813rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+.wojo.button .status.negative {
+  background: var(--negative-color);
+}
+.wojo.button .status.positive {
+  background: var(--positive-color);
+}
+/* == circular == */
+.wojo.circular.button {
+  border-radius: 100rem;
+}
+/* == compact == */
+.wojo.compact.buttons,
+.wojo.compact.button {
+  padding: .750rem 1rem;
+}
+/* == rounded == */
+.wojo.rounded.buttons,
+.wojo.rounded.button {
+  border-radius: 2.5rem;
+}
+/* == spaced == */
+.wojo.spaced.button {
+  margin-right: 1rem;
+}
+/* == passive == */
+.wojo.passive.button {
+  cursor: default;
+  pointer-events: none;
+}
+/* == attached == */
+.wojo.attached.buttons,
+.wojo.attached.button {
+  position: absolute;
+  z-index: 2
+}
+.wojo.attached.top.buttons,
+.wojo.attached.top.button {
+  top: 0
+}
+.wojo.attached.bottom.buttons,
+.wojo.attached.bottom.button {
+  bottom: 0
+}
+.wojo.attached.left.buttons,
+.wojo.attached.left.button {
+  left: 0
+}
+.wojo.attached.right.buttons,
+.wojo.attached.right.button {
+  right: 0
+}
+.wojo.attached.middle.buttons,
+.wojo.attached.middle.button {
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.wojo.attached.spaced.top.buttons,
+.wojo.attached.spaced.top.button {
+  top: 1rem;
+}
+.wojo.attached.spaced.right.buttons,
+.wojo.attached.spaced.right.button {
+  right: 1rem
+}
+.wojo.attached.spaced.left.buttons,
+.wojo.attached.spaced.left.button {
+  left: 1rem
+}
+.wojo.attached.outside.top.buttons,
+.wojo.attached.outside.top.button {
+  top: -1rem;
+}
+.wojo.attached.outside.right.buttons,
+.wojo.attached.outside.right.button {
+  right: -1rem
+}
+.wojo.attached.outside.left.buttons,
+.wojo.attached.outside.left.button {
+  left: -1rem
+}
+/* == disabled == */
+.wojo.buttons .disabled.button,
+.wojo.disabled.button,
+.wojo.button:disabled,
+.wojo.disabled.button:hover,
+.wojo.disabled.active.button {
+  cursor: default;
+  opacity: 0.45;
+  box-shadow: none;
+  pointer-events: none;
+}
+/* == loading == */
+.wojo.loading.loading.button {
+  z-index: 1;
+  cursor: default;
+  color: transparent;
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0s linear, opacity 0.1s ease;
+}
+.wojo.loading.button::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: calc(-1.5rem / 2);
+  margin-left: calc(-1.5rem / 2);
+  border-radius: 50%;
+  border: 4px solid rgba(0,0,0,.1);
+  border-top-color: #fff;
+  -webkit-animation: spinner .6s linear infinite;
+  animation: spinner .6s linear infinite;
+}
+.wojo.small.loading.button::after {
+  width: 1rem;
+  height: 1rem;
+  margin-top: -.5rem;
+  margin-left: -.5rem;
+  border: 2px solid rgba(0,0,0,.1);
+  border-top-color: #fff;
+}
+@-webkit-keyframes spinner {
+ to {
+-webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+@keyframes spinner {
+ to {
+-webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+/* == Sizes == */
+.wojo.relaxed.button {
+  padding: .875rem 2.5rem;
+}
+.wojo.very.relaxed.button {
+  padding: .875rem 4rem;
+}
+.wojo.mini.buttons .button,
+.wojo.mini.button {
+  font-size: .750rem;
+  padding: .50rem 1rem;
+  line-height: .750rem;
+}
+.wojo.mini.button .icon {
+  font-size: 1rem;
+}
+button.wojo.mini.fluid.button {
+  width: calc(100% - 2rem - 2px);
+}
+.wojo.mini.circular.button,
+.wojo.mini.icon.button {
+  padding: .375rem;
+}
+.wojo.small.buttons .button,
+.wojo.small.button {
+  font-size: .875rem;
+  padding: .625rem 1.250rem;
+}
+button.wojo.small.fluid.button {
+  width: calc(100% - 2.5rem - 2px);
+}
+.wojo.small.circular.button,
+.wojo.small.icon.button {
+  padding: .625rem;
+}
+.wojo.buttons .button,
+.wojo.button {
+  font-size: 1rem;
+}
+.wojo.big.buttons .button,
+.wojo.big.button {
+  font-size: 1.25rem;
+  padding: 1em 2em;
+}
+.wojo.big.circular.button {
+  padding: 1.25rem;
+}
+.wojo.huge.buttons .button,
+.wojo.huge.button {
+  font-size: 1.5rem;
+  padding: 1.25em 2.50em;
+}
+.wojo.huge.circular.button {
+  padding: 1.5rem;
+}
+.wojo.massive.buttons .button,
+.wojo.massive.button {
+  font-size: 1.5rem;
+  padding: 1.5em 3em;
+}
+.wojo.massive.circular.button {
+  padding: 2.5rem;
+}
+.wojo.compact.button {
+  padding: .5rem 1rem;
+}
+
+/* Phone */
+@media screen and (max-width:30em) {
+.wojo.stacked.button {
+  display: flex;
+  flex: 1 1 0px;
+  min-width: 0;
+  margin-bottom:.250rem;
+}
+.wojo.buttons.stacked {
+  display: flex;
+  flex-direction: column;
+}
+.wojo.buttons.stacked .button {
+  flex: 1 1 0px;
+  min-width: 0;
+  border-radius:.250rem;
+  justify-content: flex-start;
+  margin-bottom:.250rem;
+}
+
+.wojo.buttons.stacked .button:first-child,
+.wojo.buttons.stacked .button:last-child {
+  border-radius:.250rem;
+}
+}

@@ -1,0 +1,127 @@
+/* == Progress == */
+.wojo.progress {
+  width: 100%;
+  height: 1.5rem;
+  background: var(--grey-color-300);
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: .250rem;
+}
+.wojo.progress .bar {
+  display: block;
+  position: relative;
+  width: 0px;
+  height: 100%;
+  background: var(--grey-color);
+  border-radius: .250rem;
+  z-index: 1;
+}
+.wojo.progress .label {
+  font-weight: 700;
+  margin-top: .250em;
+  text-align: center;
+  font-size: .875rem;
+}
+.wojo.progress .tipWrap {
+  display: none;
+}
+.wojo.progress .tip {
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+  right: .5rem;
+  font-size: .750rem;
+  font-weight: 600;
+  top: 50%;
+  color: rgba(255,255,255,0.7)
+}
+/* == Colors == */
+.wojo.primary.progress .bar {
+  background: var(--primary-color);
+}
+.wojo.secondary.progress .bar {
+  background: var(--secondary-color);
+}
+.wojo.positive.progress .bar {
+  background: var(--positive-color);
+}
+.wojo.negative.progress .bar {
+  background: var(--negative-color);
+}
+.wojo.dark.progress .bar {
+  background: var(--dark-color);
+}
+.wojo.transparent.progress .bar {
+  background-color: rgba(255,255,255,0.5)
+}
+/* == Types == */
+.wojo.active.progress .bar::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  border-radius: .250rem;
+  -webkit-animation: progress-active 2s ease infinite;
+  animation: progress-active 2s ease infinite;
+}
+@-webkit-keyframes progress-active {
+ 0% {
+ opacity: 0.3;
+ width: 0;
+}
+ 100% {
+ opacity: 0;
+ width: 100%;
+}
+}
+@keyframes progress-active {
+ 0% {
+ opacity: 0.3;
+ width: 0;
+}
+ 100% {
+ opacity: 0;
+ width: 100%;
+}
+}
+/* == Variations == */
+.wojo.progress.attached {
+  background: transparent;
+  position: absolute;
+  border: none;
+  margin: 0;
+  left:0;
+}
+.wojo.progress.attached,
+.wojo.progress.attached .bar {
+  overflow: hidden;
+  border-radius: 0;
+}
+.wojo.progress.attached .bar {
+  border-radius: 0;
+}
+.wojo.progress.top.attached,
+.wojo.progress.top.attached .bar {
+  top: 0;
+}
+.wojo.progress.bottom.attached,
+.wojo.progress.bottom.attached .bar {
+  bottom: 0;
+}
+.wojo.progress.fitted {
+  margin-bottom:0
+}
+/* == Sizes == */
+.wojo.tiny.progress {
+  height: .25rem;
+}
+.wojo.mini.progress {
+  height: .5rem;
+}
+.wojo.small.progress {
+  height: 1rem;
+}

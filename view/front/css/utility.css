@@ -1,0 +1,791 @@
+/* == Font Size == */
+.wojo.tiny.text {
+  font-size: 0.688rem;
+}
+.wojo.mini.text {
+  font-size: 0.750rem;
+}
+.wojo.small.text {
+  font-size: 0.875rem;
+}
+.wojo.normal.text {
+  font-size: 1rem;
+}
+.wojo.medium.text {
+  font-size: 1.25rem;
+}
+.wojo.large.text {
+  font-size: 1.625rem;
+}
+.wojo.big.text {
+  font-size: 2.250rem;
+}
+.wojo.huge.text {
+  font-size: 2.75rem;
+}
+.wojo.massive.text {
+  font-size: 3.250rem;
+}
+.wojo.thin.text {
+  font-weight: 300;
+}
+.wojo.light.text {
+  font-weight: 400;
+}
+.wojo.semi.text {
+  font-weight: 500;
+}
+.wojo.demi.text {
+  font-weight: 600;
+}
+.wojo.bold.text {
+  font-weight: 800;
+}
+.wojo.italic.text {
+  font-style: italic;
+}
+.wojo.link.text {
+  cursor:pointer;
+}
+.wojo.primary.text {
+  color: var(--primary-color);
+}
+.wojo.secondary.text {
+  color: var(--secondary-color);
+}
+.wojo.positive.text {
+  color: var(--positive-color);
+}
+.wojo.negative.text {
+  color: var(--negative-color);
+}
+.wojo.light.text {
+  color: var(--light-color);
+}
+.wojo.white.text {
+  color: #fff;
+}
+.wojo.dark.text {
+  color: var(--dark-color);
+}
+.wojo.grey.text {
+  color: var(--grey-color);
+}
+.wojo.strike.text {
+  text-decoration: line-through;
+}
+.wojo.caps {
+  text-transform: uppercase;
+}
+.wojo.short.text {
+  line-height: 1;
+}
+.wojo.tall.text {
+  line-height: 2;
+}
+.wojo.dimmed.text {
+  opacity: .75;
+}
+.wojo.very.dimmed.text {
+  opacity: .5;
+}
+.wojo.icon.text {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.wojo.icon.text > .icon,
+.wojo.icon.text > .image,
+.wojo.icon.text > .label {
+  flex: 0 0 auto;
+  max-width: 100%;
+  margin-right: .5em;
+}
+.wojo.icon.text.middle {
+  display: flex;
+  justify-content: center;
+}
+.wojo.icon.right.text > .icon,
+.wojo.icon.right.text > .image,
+.wojo.icon.right.text > .label {
+  margin-left: .5em;
+  margin-right: auto;
+}
+.wojo.primary.bg {
+  background-color: var(--primary-color);
+}
+.wojo.primary.inverted.bg {
+  background-color: var(--primary-color-inverted);
+}
+.wojo.secondary.bg {
+  background-color: var(--secondary-color);
+}
+.wojo.secondary.inverted.bg {
+  background-color: var(--secondary-color-inverted);
+}
+.wojo.positive.bg {
+  background-color: var(--positive-color);
+}
+.wojo.positive.inverted.bg {
+  background-color: var(--positive-color-inverted);
+}
+.wojo.negative.bg {
+  background-color: var(--negative-color);
+}
+.wojo.negative.inverted.bg {
+  background-color: var(--negative-color-inverted);
+}
+.wojo.light.bg {
+  background-color: var(--light-color);
+}
+.wojo.dark.bg {
+  background-color: var(--dark-color);
+}
+.wojo.grey.bg {
+  background-color: var(--grey-color);
+}
+.wojo.grey100.bg {
+  background-color: var(--grey-color-100);
+}
+.wojo.grey300.bg {
+  background-color: var(--grey-color-300);
+}
+.wojo.grey500.bg {
+  background-color: var(--grey-color-500);
+}
+.wojo.boxed {
+  border: 1px solid var(--grey-color-300);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.wojo.shadow {
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.wojo.soft.shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.wojo.readonly {
+  position: relative;
+  cursor: not-allowed;
+  point-events: none;
+  text-shadow: none !important;
+  color: transparent !important;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+}
+.wojo.readonly:before {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  background: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.250em;
+  z-index: 10;
+}
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.highlite {
+  background-color: #fffde7;
+}
+.dimmable {
+  position: relative;
+  z-index: 0;
+}
+.dimmable.active::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--dark-color-shadow);
+}
+/* == Tabs == */
+.wojo.tabs .nav,
+.wojo.navs .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wojo.tabs .nav li,
+.wojo.navs .nav li {
+  margin-right: 1rem;
+}
+.wojo.tabs .nav li:last-child,
+.wojo.navs .nav li:last-child  {
+  margin-right: 0;
+}
+.wojo.tabs .nav li a,
+.wojo.navs .nav li a {
+  border: 1px solid var(--grey-color-300);
+  padding: .5rem 1.75rem;
+  border-radius: 0.250rem;
+  display: flex;
+  background: #fff;
+  flex-flow: row wrap;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.wojo.tabs .nav li a .icon,
+.wojo.tabs .nav li a img,
+.wojo.navs .nav li a .icon,
+.wojo.navs .nav li a img  {
+  flex: 0 0 auto;
+  max-width: 100%;
+  align-self: center;
+  margin-right: .5rem;
+}
+.wojo.tabs .nav li a.right .icon,
+.wojo.tabs .nav li a.right img,
+.wojo.navs .nav li a.right .icon,
+.wojo.navs .nav li a.right img {
+  margin-left: .5rem;
+}
+.wojo.tabs .nav li.active a,
+.wojo.tabs .nav li a:hover,
+.wojo.navs .nav li.active a,
+.wojo.navs .nav li a:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color-inverted);
+}
+.wojo.tabs .tab {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.250rem;
+  padding: 2rem 1rem;
+  background: #fff;
+  border: 1px solid var(--grey-color-300);
+}
+.wojo.fluid.tabs .nav l,
+.wojo.fluid.navs .nav lii {
+  flex: 1 1 0px;
+  min-width: 0;
+}
+.wojo.navs.secondary {
+  background-color: var(--secondary-color);
+  border-radius:.250rem;
+  padding:1rem;
+}
+.wojo.navs.secondary .nav li a {
+  background: transparent;
+  color: #fff;
+  border:0;
+}
+.wojo.navs.secondary .nav li.active a,
+.wojo.navs.secondary .nav li a:hover {
+  background-color: rgba(255,255,255,.2);
+}
+/* Mobile */
+@media screen and (max-width:48.063em) {
+.wojo.tabs .nav,
+.wojo.navs .nav {
+  flex-direction: column;
+}
+.wojo.tabs .nav li,
+.wojo.navs .nav li {
+  margin-right: 0
+}
+}
+/* == Accordion == */
+.wojo.accordion section {
+  border-radius: .250rem;
+  position: relative;
+  border: 1px solid var(--grey-color-300);
+  margin-bottom: .75rem;
+}
+.wojo.accordion section h6.summary {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0
+}
+.wojo.accordion section h6.summary a {
+  padding: 2rem 4.5rem 2rem 2rem;
+  display: block;
+  font-weight: 400;
+  position: relative;
+  border-radius: .250rem .250rem 0 0;
+}
+.wojo.accordion section h6.summary a::before {
+  font-family: "WojoIcons";
+  position: absolute;
+  content: "\e9e6";
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%)
+}
+.wojo.accordion section.active h6.summary a {
+  background-color: var(--primary-color);
+  color: var(--primary-color-inverted);
+}
+.wojo.accordion section.active h6.summary a::before {
+  content: "\ea0c";
+}
+.wojo.accordion section .details {
+  padding: 2rem;
+}
+/* == Breadcrumb == */
+.wojo.breadcrumb {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-weight: 300;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+}
+.wojo.breadcrumb .divider {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  white-space: nowrap;
+  min-width: 0;
+  margin: 0 .750rem;
+  color: var(--grey-color-500);
+}
+.wojo.breadcrumb a.section {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.wojo.breadcrumb .active.section {
+  font-weight: 400;
+  color: var(--dark-color);
+}
+.wojo.small.breadcrumb {
+  font-size: 0.875rem;
+}
+/* == Pagination == */
+.wojo.pagination {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.wojo.pagination .item {
+  flex: 1 1 0px;
+  min-width: 0;
+  line-height: 1rem;
+  padding: .750rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  border-radius: .250rem;
+  text-align:center;
+}
+.wojo.pagination .item.active {
+  background-color: var(--primary-color);
+  color: var(--primary-color-inverted);
+}
+.wojo.pagination .item:hover {
+  color: var(--primary-color);
+}
+.wojo.pagination .item.disabled {
+  color: var(--grey-color-500);
+  cursor: not-allowed;
+}
+.wojo.small.pagination .item {
+  padding: .750rem;
+  font-size: .875rem;
+}
+/* == Dividers == */
+.wojo.divider {
+  border-top: 1px solid var(--dark-color-shadow);
+  height: 0;
+  margin: 0.5rem 0;
+}
+.wojo.vertical.divider {
+  border:0;
+  background-color: var(--dark-color-shadow);
+  height: .750rem;
+  margin: 0 0.5rem;
+  width:1px;
+  display:inline-block
+}
+.wojo.basic.divider {
+  border-top: 1px solid var(--dark-color-shadow);
+  height: 0;
+  margin: 0;
+}
+.wojo.space.divider {
+  border:0;
+  margin: 0;
+  height:1rem;
+}
+.wojo.auto.divider {
+  border-color: var(--grey-color-300);
+   margin: 1rem -2rem;
+}
+/* == Uploader == */
+.wojo.basic.uploader {
+  border: 0;
+  width: 100%;
+  color: #92AAB0;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  text-align: left;
+}
+.wojo.uploader-active {
+  border-color: #0B85A1;
+}
+.wojo.uploader div.or {
+  font-size: 14px;
+  font-weight: bold;
+  color: #C0C0C0;
+  padding: 10px;
+}
+.wojo.basic.uploader div.content label {
+  background-color: transparent;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: auto;
+  margin: 0;
+  box-shadow: none;
+}
+.wojo.uploader div.content span {
+  cursor: pointer;
+}
+.wojo.uploader div.content input,
+.wojo.button.uploader input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0;
+  width:100%;
+  height:100%;
+  direction: ltr;
+  cursor: pointer;
+}
+.wojo.uploader div.content label:hover {
+  background-color: #427fed;
+}
+.wojo.basic.uploader div.content label:hover {
+  background-color: transparent;
+}
+.wojo.button.uploader {
+  width: auto;
+  margin: 0;
+}
+/* == Activity == */
+ul.wojo.activity,
+ul.wojo.activity li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.wojo.activity li {
+  clear: both;
+}
+ul.wojo.activity li .intro {
+  float: left;
+  width: 150px;
+  text-align: right;
+  position: relative;
+  font-size: .938em;
+  font-weight: 700;
+  padding: 1rem;
+}
+ul.wojo.activity li .intro:after,
+ul.wojo.activity li .intro:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  right: -6px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  top: 1.5em;
+  z-index: 3
+}
+ul.wojo.activity li:nth-child(2n) .content {
+  background-color: var(--shadow-color);
+}
+ul.wojo.activity li .content {
+  margin-left: 150px;
+  padding: 1em;
+  position: relative;
+}
+ul.wojo.activity li .content:before {
+  position: absolute;
+  height: 100%;
+  content: "";
+  border-left: 2px solid var(--secondary-color);
+  left: 0;
+  top: 0;
+  z-index: 1
+}
+/* == Scroller == */
+.scrollbox {
+  overflow: auto;
+}
+/* == Calendar  == */
+.wojo.mcalendar {
+  border-radius: .250em;
+}
+.wojo.mcalendar .header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid var(--grey-color-300);
+}
+.wojo.mcalendar .header div {
+  flex: 1 1 0px;
+  min-width: 0;
+  position: relative;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: .5rem;
+  font-size: .875em;
+}
+/* Calendar days wrapper */
+.wojo.mcalendar .content {
+  overflow: hidden;
+}
+.wojo.mcalendar .weeks {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid var(--grey-color-300);
+}
+/* Calendar Days */
+.wojo.mcalendar .weeks .cell {
+  min-width: 0;
+  flex: 0 0 calc(100% / 7);
+  max-width: calc(100% / 7);
+  box-sizing: border-box;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  background: #fff;
+  border-left: 1px solid var(--grey-color-300);
+  -webkit-transition: .25s;
+  transition: .25s;
+  padding: 0;
+  text-decoration: none;
+}
+.wojo.mcalendar .weeks .cell:first-child {
+  border-left: 0;
+}
+.wojo.mcalendar .weeks .day::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  float: left;
+}
+.wojo.mcalendar .weeks .empty {
+  background-color: var(--grey-color-100);
+}
+.wojo.mcalendar .weeks .date {
+  position: absolute;
+  line-height: 2rem;
+  top: 2px;
+  right: 5px;
+  font-size: .875rem;
+  color: rgba(0,0,0,0.5);
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: .250rem;
+}
+/* Current day style */
+.wojo.mcalendar .weeks .day.today .date {
+  background: var(--primary-color);
+}
+.wojo.mcalendar .weeks .day.today .date {
+  color: #fff;
+}
+.wojo.mcalendar .progress {
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  max-width: 20px;
+  margin: 0 auto;
+  padding-top: 1.75rem;
+}
+.wojo.mcalendar .indicator {
+  display: inline-block;
+  margin: 1px;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  border-radius: 6px;
+  background-color: #2B3D4C;
+  font-size: 0;
+  color: transparent;
+}
+.wojo.mcalendar .indicator:hover {
+  cursor: pointer;
+}
+/* Current events */
+.wojo.mcalendar .list {
+  background: rgba(255, 255, 255, 0.85);
+  overflow: auto;
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  height: calc(100% - 40px);
+  display: none;
+}
+.wojo.mcalendar .list .event {
+  display: block;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: .250em;
+  margin-bottom: .5rem;
+  position: relative
+}
+.wojo.mcalendar .list .event .description {
+  font-size: .938em;
+  margin: 0.25em 0
+}
+.wojo.mcalendar .list .event > a {
+  font-size: .875rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75)
+}
+.wojo.mcalendar .list .event > a:hover {
+  color: rgba(255,255,255,1)
+}
+.wojo.mcalendar .list .event .time {
+  font-weight: 500;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.wojo.mcalendar .list .event .time .start,
+.wojo.mcalendar .list .event .time .end {
+  font-size: .750rem;
+  display: inline-block;
+}
+.wojo.mcalendar .list .event .time .end:not(:empty):before {
+  content: '-';
+  padding: 0 2px;
+}
+.wojo.mcalendar .list .date {
+  width: 4.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  font-size: .875em;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+.wojo.mcalendar .list .date > span {
+  display: block;
+}
+.wojo.mcalendar .list .today .date {
+  color: #5E35B1;
+}
+.wojo.mcalendar .event-item {
+  position: relative;
+  padding: 1rem 1rem .5rem 4.5rem;
+  display: none;
+  border-top: 1px solid var(--grey-color-300);
+  text-align: left;
+}
+.wojo.mcalendar .event-item:after {
+  content: '-/-';
+  padding: .5rem 1rem;
+  display: block;
+  margin-bottom: .5rem;
+}
+.wojo.mcalendar .event-item .remove {
+  top: 1em;
+  position: absolute;
+  right: 1.5em;
+  color: #fff
+}
+.wojo.mcalendar .list .active {
+  display: block;
+}
+.wojo.mcalendar .list .active:after {
+  display: none!important;
+}
+
+@media (min-width: 400px) {
+.wojo.mcalendar .weeks .date {
+  top: 5px;
+  left: 5px;
+  font-size: .750em;
+}
+}
+@media (min-width: 600px) {
+.wojo.mcalendar .weeks .day {
+  padding-top: 2em;
+  position: relative;
+}
+.wojo.mcalendar .weeks .day:before {
+  padding-top: 77%;
+}
+.wojo.mcalendar .progress {
+  width: auto;
+  max-width: none;
+  padding-top: .5rem;
+}
+.wojo.mcalendar .list .event .time {
+  position: absolute;
+  left: auto;
+  right: .5rem
+}
+.wojo.mcalendar .indicator {
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  margin: 0 0 1px 0;
+  width: auto;
+  font-size: .875rem;
+  padding: .875rem;
+  border-radius: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.wojo.mcalendar .indicator.start {
+  border-radius: .250rem 0 0 .250rem;
+}
+.wojo.mcalendar .indicator.end {
+  border-radius: 0 .250rem .250rem 0;
+}
+.wojo.mcalendar .indicator.full {
+  border-radius: .250rem;
+}
+}
+@media screen and (max-width:769px) {
+ul.wojo.activity li .intro {
+  float: none;
+  width: auto;
+  text-align: left;
+  padding: .5em 1em;
+  background-color: var(--shadow-color);
+}
+ul.wojo.activity li:nth-child(2n) .content {
+  background-color: rgba(0, 0, 0, 0);
+}
+ul.wojo.activity li .content {
+  margin-left: 0;
+  padding: .5em 1em;
+  position: relative;
+}
+ul.wojo.activity li .intro:after,
+ul.wojo.activity li .intro:before,
+ul.wojo.activity li .content:before {
+  display: none
+}
+}
